@@ -35,14 +35,14 @@ else
 fi
 
 echo " Packaging and uploading infra to S3"
-sam package --template-file template.yaml \
+aws cloudformation package --template-file template.yaml \
   --s3-bucket $SAM_DEPLOYMENT_BUCKET \
   --output-template-file deploy-template.yaml \
   --region us-east-1
 echo " -> Done!"
 
 echo " Deploying infra"
-sam deploy --template-file deploy-template.yaml \
+aws cloudformation deploy --template-file deploy-template.yaml \
   --stack-name $APPLICATION_NAME \
   --capabilities CAPABILITY_IAM \
   --parameter-overrides DomainName=$DOMAIN_NAME HostedZoneId=$HOSTED_ZONE_ID EmailAddress=$EMAIL_ADDRESS \

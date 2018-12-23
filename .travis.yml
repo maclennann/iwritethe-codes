@@ -1,8 +1,10 @@
 language: node_js
 script:
   - if [ -z "$TRAVIS_TAG" ]; then exit 0; fi
-  - pip install --user aws-cli
-  - pip install --user aws-sam-cli
+  - curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  - unzip awscli-bundle.zip
+  - ./awscli-bundle/install -b ~/bin/aws
+  - export PATH=~/bin:$PATH
 deploy:
   provider: script
   script: bash deploy.sh
