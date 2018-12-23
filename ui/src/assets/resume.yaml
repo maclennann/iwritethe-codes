@@ -1,0 +1,199 @@
+basics:
+  name: Norm MacLennan
+  label: Cloud Engineer
+  picture: https://s.gravatar.com/avatar/4ae97fe3852cd0eebdd532815920de06?s=256
+  email: norm@iwritethe.codes
+  phone: (781) 635-0062
+  website: https://iwritethe.codes
+  summary: |
+   I am a Cloud-focused, security-minded, operations and development generalist.
+   <br/><br/>
+   I have a long history of designing, developing, and implementing robust and easy-to-use security and operations tooling and services for use by developers. I am passionate about allowing developers and other technologists to implement robust security and operations practices through the use of Cloud technologies, open source software, and easy-to-use tools and services.
+  location:
+    countryCode: US
+    region: Massachusetts
+  profiles:
+    -
+      network: twitter
+      username: nromdotcom
+      url: https://twitter.com/nromdotcom
+    -
+      network: github-circle
+      username: maclennann
+      url: https://github.com/maclennann
+    -
+      network: rss
+      url: https://blog.iwritethe.codes
+    -
+      network: email
+      url: "mailto:norm@iwritethe.codes"
+work:
+  -
+    company: Chewy
+    position: Cloud Engineer III
+    website: https://chewy.com
+    startDate: 2018-10
+    endDate: Present
+    summary: |
+      As a Cloud Engineer on the SRE team, I am responsible for helping Chewy start their Cloud transformation.
+    highlights:
+      - Work with employees across all levels to help develop the Cloud strategy for the company.
+      - Support development teams in the design and architecture of new applications, and re-architecture of existing applications
+        to support the move to Cloud infrastructure.
+      - Provide support and consulting on Cloud security and operations, including maintaining internally-used Terraform modules.
+      - Create and maintain all Chewy-owned AWS accounts.
+    technologies: [AWS, Terraform, Ruby, Nodejs, GitHub, TravisCI]
+  -
+    company: Cimpress
+    position: Principal Software Engineer
+    website: https://cimpress.cloud
+    startDate: 2016-07
+    endDate: 2018-10
+    summary: |
+     Cimpress owns several print and customization brands (such as Vistaprint) and is building a "Mass Customization Platform" to create a marketplace that allows first and third parties to leverage its global network of merchants and fulfillers.
+
+     As a software developer on the UnOps team, I led the Cloud Engineering squad. We were a small team of Cloud-focused generalists with Operations mindsets in charge of Cimpress' Cloud footprint. We managed a majority of Cimpress' AWS accounts and GCP projects and provided teams throughout the organization with tooling, services, support, and consulting to help them architect their services to be operable, secure, fault-tolerant, and cost-effective.
+    highlights:
+      - Led the initiative to define, codify, and document Cloud Operations and Security standards for all of Cimpress. Created comprehensive documentation and ran consistent training to socialize the standards.
+      - Wrote, operated, and maintained a collection of microservices to help provide developers actionable information about the security, scalability, and cost-effectiveness of their services and provided tooling to take manual or automatic action to remediate issues.
+      - Helped move Cimpress from a single AWS account to more than 150 linked accounts owned by service teams. Made accounts easy to request/create, provisioned accounts are secure by default and come with several "quality of life" features for improved security and operability.
+      - Helped design and implement the federated login mechanism for Cimpress AWS accounts and created tooling to make it easy to use.
+      - Designed, implemented, and open sourced several small unitilies for Cloud operations and security.
+      - Established and/or maintained Enterprise relationships with AWS, Google, and Cloud security service vendors.
+    technologies: [AWS, Ruby, Node, Vue, REST, Serverless, OAuth2, Docker, GCP, GitLab/CI]
+  -
+    company: Cimpress
+    position: Senior Software Engineer
+    website: https://cimpress.com
+    startDate: 2014-07
+    endDate: 2016-07
+    summary: |
+     Cimpress owns several print and customization brands (such as Vistaprint) and is building a "Mass Customization Platform" to create a marketplace to allow first and third parties to leverage its network of merchants and fulfillers.
+
+     As a software developer on the Infrastructure Core Engineering team, I was responsbile for providing tooling and running services that enabled development teams to break apart a monolithic codebase into a microservices ecosystem. Tooling and services focused on development, CI/CD, and monitoring.
+    highlights:
+      - Contributed to in-house, self-service microservice deployment service and surrounding tooling.
+      - Later led efforts to retire said in-house deployment system in favor of Cloud-native or third-party deployment technologies. Provided support and documentation to technology teams on adopting industry or community standard tools and services for deployment.
+    technologies: [Ruby, Node, C#, Windows, IIS, Puppet, Ubuntu, Nginx, Sensu]
+  -
+    company: Vistaprint
+    position: System Administrator
+    website: https://vistaprint.com
+    startDate: 2010-10
+    endDate: 2014-07
+    summary: |
+     Vistaprint.com is a global e-commerce company that enables customers to design, customize, and print marketing material and promotional products.
+
+     As a System Administrator on the NOC Admins team, I was a member of a 24/7 team responsible for monitoring the production website, deploying patches, and troubleshooting/triaging issues. A typical shift involved deploying new code to production, coordinating with teams on change management, triaging alerts from monitoring systems, and developing automation or documentation for troubleshooting and remediating production issues.
+    highlights:
+      - Built a change management and collaboration tool to coordinate multiple remote parties during major production activities.
+      - Built tooling and scripts for automating the detection, troubleshooting, and remediation of production issues.
+      - Communicated with development and operations teams throughout the organization to help understand, troubleshoot, and remediate production issues.'
+    technologies: [Windows, Powershell, IIS, C#, SCOM, Nagios]
+
+education:
+  -
+    institution: Wentworth Institute of Technology
+    area: Computer Networking and Information Systems Management
+    studyType: Bachelor
+    startDate: 2006
+    endDate: 2010
+projects:
+  - 
+    name: "Multi-region Serverless APIs: I've got a fever and the only cure is fewer servers"
+    url: https://www.awsadvent.com/2018/12/08/multi-region-serverless-apis-ive-got-a-fever-and-the-only-cure-is-fewer-servers/
+    summary: A practical walkthrough of using AWS SAM to create and deploy a multi-region API.
+  -
+    name: Red-X
+    url: https://github.com/Cimpress-MCP/red-x
+    summary: |
+      A Lambda function to detect abandoned or misconfigured records and delegations within a Route53 Hosted Zone.
+  -
+    name: Felix
+    url: https://github.com/Cimpress-MCP/felix
+    summary: |
+      A Lambda function that can automatically rotate IAM keys used by third-party services like GitLab, SumoLogic, and TravisCI.
+  -
+    name: Using Federated Login to provide AWS CLI/API access
+    url: https://www.awsadvent.com/2016/12/03/using-federated-login-to-provide-aws-cliapi-access/
+    summary: Documenting a strategy for providing federated login to one or many AWS accounts for Console and API access using Auth0.
+skills:
+  -
+    name: Web/API Development
+    level: pretty good
+    keywords: [HTML, CSS, Node, Vue, REST, Oauth2, JWT]
+  -
+    name: Programming and Scripting
+    level: pretty good
+    keywords: [Node, Ruby, Go, Bash]
+  -
+    name: Cloud Operations and Security
+    level: pretty good
+    keywords: [AWS, GCP, Terraform]
+  -
+    name: System Administration
+    level: alright
+    keywords: [Linux, Debian, Nginx, BIND, Puppet]
+languages:
+  -
+    language: English
+    fluency: Native Speaker
+interests:
+  -
+    name: Boardgames
+    summary: I have a fairly big and constantly-expanding boardgame collection. Even modified an Ikea dinner table to make a custom gaming table.
+    links:
+      -
+        name: Collection
+        url: https://boardgamegeek.com/collection/user/nmaclennan
+      -
+        name: Custom Gaming Table
+        url: https://imgur.com/a/PoCfZ
+  -
+    name: Legos
+    summary: We have a huge Lego collection. We're even building a cute little Lego town in our basement.
+    links:
+      -
+        name: Collection
+        url: https://brickset.com/sets/ownedby-normandkerry
+  -
+    name: Hiking
+    summary: I live down the street from the northern terminus of the Midstate Trail and a couple towns over from Mt. Monadnock.
+
+guidingPrinciples:
+  -
+    summary: Use and contribute to open source.
+    description: |
+      Open source is the life-blood of the industry.
+
+      Sharing ideas, techniques, and code lessens the burden on all of us and helps make everyone better at their jobs.
+  -
+    summary: Practice empathy in communication with others.
+    description: |
+      "People aren't (generally) evil, but they are busy." - @gphat
+
+      I try to think about this whenever I'm asking someone to do something.
+  -
+    summary: Construct secure, composable, and maintainable systems.
+    description: |
+      Technology changes rapidly.
+
+      Build systems that can stand the test of time if necessary, but also allow for pieces of that system to change without making the whole thing crumble.
+  -
+    summary: Make it easy for people to do the right thing.
+    description: |
+      People might be lazy, busy, or just don't know better.
+
+      Don't penalize them for that, make it easy for them to do the right thing and be great at their jobs.
+  -
+    summary: Build reliable and repeatable processes.
+    description: |
+      Never do twice what you can automate once.
+
+      Where you can't automate (and even where you can), document.
+  -
+    summary: Adopt industry and community standards and tooling where possible.
+    description: |
+      Best practices are the best for a reason.
+
+      Make sure you understand the problem space properly before ignoring them or &quot;innovating&quot;.

@@ -1,0 +1,8 @@
+language: node_js
+script:
+  - if [ -z "$TRAVIS_TAG" ]; then exit 0; fi
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    tags: true
