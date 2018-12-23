@@ -1,6 +1,8 @@
 language: node_js
 script:
   - if [ -z "$TRAVIS_TAG" ]; then exit 0; fi
+  - pip install --user aws-cli
+  - pip install --user aws-sam-cli
 deploy:
   provider: script
   script: bash deploy.sh
