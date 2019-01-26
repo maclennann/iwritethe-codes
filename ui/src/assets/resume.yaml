@@ -23,7 +23,7 @@ basics:
       url: https://github.com/maclennann
     -
       network: rss
-      url: https://blog.iwritethe.codes
+      url: https://iwritethe.codes/blog/
     -
       network: email
       url: "mailto:norm@iwritethe.codes"
