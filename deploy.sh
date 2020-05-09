@@ -8,8 +8,7 @@ set -e
 : ${HOSTED_ZONE_ID?Need zone id for route53 zone.}
 : ${EMAIL_ADDRESS?Need email address for contact form.}
 
-# git_sha="$(git rev-parse --short HEAD)"
-# IWTC_VERSION="$TRAVIS_TAG-$git_sha"
+IWTC_VERSION="$(git describe --tag --always)"
 
 echo "Attempting deployment of version $IWTC_VERSION"
 

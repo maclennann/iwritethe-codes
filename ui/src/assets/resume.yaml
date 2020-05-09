@@ -14,9 +14,9 @@ basics:
     region: Massachusetts
   profiles:
     -
-      network: twitter
-      username: nromdotcom
-      url: https://twitter.com/nromdotcom
+      network: mastodon
+      username: norm
+      url: https://social.fedi.farm/users/norm
     -
       network: github-circle
       username: maclennann
@@ -29,20 +29,32 @@ basics:
       url: "mailto:norm@iwritethe.codes"
 work:
   -
+    company: Vistaprint
+    position: Lead Cloud Engineer
+    website: https://vistaprint.com
+    startDate: 2020-02
+    endDate: present
+    summary: >
+      As a Lead Cloud Engineering, I am responsible for ensuring all Vistaprint technology teams create secure,
+      scalable, and cost-effective solutions using Cloud technologies.
+    highlights:
+      - Use open-source tooling to help technologists discover and action waste resources within their Cloud enbironments
+    technologies: [AWS, Terraform, Python, Gitlab, GitlabCI, Cloud-Custodian]
+  -
     company: Chewy
     position: Cloud Engineer III
     website: https://chewy.com
     startDate: 2018-10
-    endDate: Present
+    endDate: 2020-02
     summary: |
-      As a Cloud Engineer on the SRE team, I am responsible for helping Chewy start their Cloud transformation.
+      As a Cloud Engineer on the SRE team, I was responsible for helping Chewy start their Cloud transformation.
     highlights:
       - Work with employees across all levels to help develop the Cloud strategy for the company.
       - Support development teams in the design and architecture of new applications, and re-architecture of existing applications
         to support the move to Cloud infrastructure.
       - Provide support and consulting on Cloud security and operations, including maintaining internally-used Terraform modules.
       - Create and maintain all Chewy-owned AWS accounts.
-    technologies: [AWS, Terraform, Ruby, Nodejs, GitHub, TravisCI]
+    technologies: [AWS, Terraform, Ruby, Nodejs, GitHub, TravisCI, CircleCI]
   -
     company: Cimpress
     position: Principal Software Engineer

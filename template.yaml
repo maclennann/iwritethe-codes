@@ -238,7 +238,7 @@ Resources:
     Type: "AWS::Serverless::Function"
     Properties:
       Handler: IndexRewriter.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       CodeUri: ./lambda_util
       Role: !GetAtt LambdaEdgeRole.Arn
       AutoPublishAlias: live
@@ -246,7 +246,7 @@ Resources:
     Type: "AWS::Serverless::Function"
     Properties:
       Handler: SecurityHeaders.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       CodeUri: ./lambda_util
       Role: !GetAtt LambdaEdgeRole.Arn
       AutoPublishAlias: live

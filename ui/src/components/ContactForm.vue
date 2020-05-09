@@ -86,7 +86,7 @@ import api from '../api.js'
       async submit() {
         try {
           this.submitting = true
-          let resp = await api.postContact(this.name, this.email, this.body)
+          await api.postContact(this.name, this.email, this.body)
           this.showMessage = true
           this.messageColor = "success"
           this.message = "Thanks for contacting me! I'll get back to you soon."
